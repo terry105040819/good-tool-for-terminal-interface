@@ -1,0 +1,12 @@
+使用Mac在Conda環境中安裝mamaba可能會遇到以下問題
+
+如果遇到
+```shell
+Error while loading conda entry point: conda-libmamba-solver (dlopen(/opt/anaconda3/lib/python3.11/site-packages/libmambapy/bindings.cpython-311-darwin.so, 0x0002): Library not loaded: @rpath/libarchive.13.dylib
+  Referenced from: <4AC18A07-59AA-3912-83CA-AD44A086503C> /opt/anaconda3/lib/libmamba.2.0.0.dylib
+  Reason: tried: '/opt/anaconda3/lib/libarchive.13.dylib' (no such file), '/opt/anaconda3/lib/python3.11/site-packages/libmambapy/../../../libarchive.13.dylib' (no such file), '/opt/anaconda3/lib/python3.11/site-packages/libmambapy/../../../libarchive.13.dylib' (no such file), '/opt/anaconda3/bin/../lib/libarchive.13.dylib' (no such file), '/opt/anaconda3/bin/../lib/libarchive.13.dylib' (no such file), '/usr/local/lib/libarchive.13.dylib' (no such file), '/usr/lib/libarchive.13.dylib' (no such file, not in dyld cache))
+Error while loading conda entry point: conda-libmamba-solver (dlopen(/opt/anaconda3/lib/python3.11/site-packages/libmambapy/bindings.cpython-311-darwin.so, 0x0002): Library not loaded: @rpath/libarchive.13.dylib
+  Referenced from: <4AC18A07-59AA-3912-83CA-AD44A086503C> /opt/anaconda3/lib/libmamba.2.0.0.dylib
+  Reason: tried: '/opt/anaconda3/lib/libarchive.13.dylib' (no such file), '/opt/anaconda3/lib/python3.11/site-packages/libmambapy/../../../libarchive.13.dylib' (no such file), '/opt/anaconda3/lib/python3.11/site-packages/libmambapy/../../../libarchive.13.dylib' (no such file), '/opt/anaconda3/bin/../lib/libarchive.13.dylib' (no such file), '/opt/anaconda3/bin/../lib/libarchive.13.dylib' (no such file), '/usr/local/lib/libarchive.13.dylib' (no such file), '/usr/lib/libarchive.13.dylib' (no such file, not in dyld cache))
+```
+先查看
