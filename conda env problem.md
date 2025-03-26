@@ -9,4 +9,12 @@ Error while loading conda entry point: conda-libmamba-solver (dlopen(/opt/anacon
   Referenced from: <4AC18A07-59AA-3912-83CA-AD44A086503C> /opt/anaconda3/lib/libmamba.2.0.0.dylib
   Reason: tried: '/opt/anaconda3/lib/libarchive.13.dylib' (no such file), '/opt/anaconda3/lib/python3.11/site-packages/libmambapy/../../../libarchive.13.dylib' (no such file), '/opt/anaconda3/lib/python3.11/site-packages/libmambapy/../../../libarchive.13.dylib' (no such file), '/opt/anaconda3/bin/../lib/libarchive.13.dylib' (no such file), '/opt/anaconda3/bin/../lib/libarchive.13.dylib' (no such file), '/usr/local/lib/libarchive.13.dylib' (no such file), '/usr/lib/libarchive.13.dylib' (no such file, not in dyld cache))
 ```
-先查看
+先查看libarchive.13.dylib的位置
+```shell
+sudo find / -name libachive.13.dylib -print
+```
+將上述指令的結果複製
+
+```shell
+ln {上述指令輸出的路徑位置} /Users/${User}/anaconda/lib/
+```
