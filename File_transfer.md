@@ -38,3 +38,7 @@ rsync -av --progress --checksum ~/file_dir/ ~/destination_dir/
 ```sh
 rsync -av --progress --checksum --files-from=list -R ~/file_dir/ ~/destination_dir/
 ```
+
+```sh
+rsync -av --progress --checksum --files-from=NGSFASTQ/move_list.txt -R NGSFASTQ/ /DATA11/Novaseq/Fastq_WGS/
+```
