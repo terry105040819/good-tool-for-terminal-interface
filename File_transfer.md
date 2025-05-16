@@ -31,3 +31,10 @@ cp -r /file/* /destination_dir
 
 ### 參考資料
 https://www.ruanyifeng.com/blog/2020/08/rsync.html
+```sh
+rsync -av --progress --checksum ~/file_dir/ ~/destination_dir/
+```
+根據list裡面的名稱移動整個檔案(-R移動路徑內所有檔案)
+```sh
+rsync -av --progress --checksum --files-from=list -R ~/file_dir/ ~/destination_dir/
+```
