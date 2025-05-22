@@ -6,7 +6,8 @@ you can customizing the text,color and theme in profiles
 
 ### 2: zsh-autosuggestions
 Zsh is a powerful shell with many features, including autosuggestion. This feature helps you quickly recall commands you've typed previously, making your workflow more efficient.
-<https://github.com/zsh-users/zsh-autosuggestions?tab=readme-ov-file>
+
+reference:<https://github.com/zsh-users/zsh-autosuggestions?tab=readme-ov-file>
 
 ### Neofetch
 Neofetch is a discontinued command-line system information tool written in the Bash shell scripting language. It displays information about your operating system, software and hardware in an aesthetic and visually pleasing way. 
