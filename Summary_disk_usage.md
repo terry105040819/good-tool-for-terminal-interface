@@ -7,3 +7,8 @@ du -sh
 du -sh NovaSeq*/ > disk_usage.txt
 ```
 
+避免對於系統暫存資料夾使用
+```sh
+du -smc --exclude=/{proc,run,sys,snap} /* 2>/dev/null
+```
+
